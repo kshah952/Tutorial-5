@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://Kinjal:%40MongoRKU@Cluster0.hjlxt.mongodb.net/Tu
         res.sendFile('index.html',{root:__dirname})
     })
 
-    app.listen((process.env||3000),()=>{
+    app.listen((process.env.PORT||3000),()=>{
         console.log('server started')
     })
 }).catch((e)=>{
